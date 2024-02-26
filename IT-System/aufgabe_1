@@ -1,0 +1,6 @@
+Loese die angefuege Aufgabe 03_string_aufgaben.py
+
+
+Schreibe ein Programm, das aus dem String "Donald Trump" -> "Tonald Drump" umwandelt
+
+Mache aus diesem Skript ein eigene Docker Image
