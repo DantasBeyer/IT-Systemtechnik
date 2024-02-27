@@ -6,6 +6,26 @@
 # bzw. eine Fehlermeldung, falls eine
 # falsche Auswahl getroffen wurde.
 
+zahl1 = int(input("Zahl 1 :"))
+operator = input("Rechenart +, -, *, /")
+zahl2 = int(input("Zahl 2 :"))
+
+if operator == "+":
+    solution = zahl1 + zahl2
+    print(solution)
+elif operator == "-":
+	solution = zahl1 - zahl2
+	print(solution)
+elif operator == "*":
+	solution = zahl1 * zahl2
+	print(solution)
+  
+elif operator == "/":
+    if zahl2 == 0:
+        print("Das kann nur Chuck Norris")
+    else:
+    	solution = zahl1 / zahl2
+print(solution)
 
 
 
