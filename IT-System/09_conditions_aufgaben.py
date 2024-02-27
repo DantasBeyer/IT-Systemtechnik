@@ -1,5 +1,7 @@
 # # Der User wird nach einer Zahl gefragt und es soll ausgegeben werden ob die Zahl = < oder > 10
 
+#string vazia = false 
+
 #
 # # Der User wird nach einer Zahl gefragt. Es soll geprüft werden ob es eine gerade oder ungerade Zahl ist
 
