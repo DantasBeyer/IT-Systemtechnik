@@ -6,26 +6,26 @@
 # bzw. eine Fehlermeldung, falls eine
 # falsche Auswahl getroffen wurde.
 
-zahl1 = int(input("Zahl 1 :"))
-operator = input("Rechenart +, -, *, /")
-zahl2 = int(input("Zahl 2 :"))
+# zahl1 = int(input("Zahl 1 :"))
+# operator = input("Rechenart +, -, *, /")
+# zahl2 = int(input("Zahl 2 :"))
 
-if operator == "+":
-    solution = zahl1 + zahl2
-    print(solution)
-elif operator == "-":
-	solution = zahl1 - zahl2
-	print(solution)
-elif operator == "*":
-	solution = zahl1 * zahl2
-	print(solution)
+# if operator == "+":
+#     solution = zahl1 + zahl2
+#     print(solution)
+# elif operator == "-":
+# 	solution = zahl1 - zahl2
+# 	print(solution)
+# elif operator == "*":
+# 	solution = zahl1 * zahl2
+# 	print(solution)
   
-elif operator == "/":
-    if zahl2 == 0:
-        print("Das kann nur Chuck Norris")
-    else:
-    	solution = zahl1 / zahl2
-print(solution)
+# elif operator == "/":
+#     if zahl2 == 0:
+#         print("Das kann nur Chuck Norris")
+#     else:
+#     	solution = zahl1 / zahl2
+# print(solution)
 
 
 
@@ -40,8 +40,26 @@ print(solution)
 # gesuchten Größe mit der richtigen Einheit aus
 
 
+#?Das ohmsche Gesetz dient zur Berechnung des Verhältnisses zwischen Spannung, Strom und Widerstand in einem Stromkreis! 
+#spannung: U = "R" * "I", stärke: I = "U" / "R", wiederstand: R = "U" / "I"
 
 
+u_r_i = input("gibt ein wert ein U, R oder I: ")
+    
+if u_r_i == "U":
+	r = float(input("gibt ein wert für R ein: "))
+	i = float(input("gibt ein wert für I ein: "))
+	print("Die Spannung ist ", r*i, "Volt" )
+elif u_r_i == "I":
+	u = float(input("gibt ein wert für U ein: "))
+	r = float(input("gibt ein wert für R ein: "))
+	print("Die Stärke ist ", u/r, "Ogm")
+elif u_r_i == "R":
+    u = float(input("gibt ein wert für U ein: "))
+    i = float(input("gibt ein wert für I ein: "))
+    print("Der Wiederstang ist ", u/i, "Ampere")
+else:
+	print("falschen wert eingegeben, bitte U, R oder I eingeben ")
 
 
 
@@ -83,22 +101,22 @@ print(solution)
 # Ausnahme zu den Jahreszahlen, die der Bedingung 2 genügen, sind alle Jahreszahlen, die nach Bedingung 2 kein Schaltjahr sind, aber deren Jahreszahl ganzzahlig durch 400 teilbar.
 # Testwerte: 1600 und 2000 waren Schaltjahre.
 #1980 2100 1200
-jahr = int(input('Bitte gebe ein Jahr an\n'))
+#jahr = int(input('Bitte gebe ein Jahr an\n'))
 
-if jahr % 4 == 0:
-
-
-	if jahr % 100 == 0:
+#if jahr % 4 == 0:
 
 
-		if jahr % 400 == 0:
-			print('Schaltjahr')
-		else:
-			print('Kein Schaltjahr')
-	else:
-		print('Schaltjahr')
-else:
-	print('Kein Schaltjahr')
+	#if jahr % 100 == 0:
+
+
+		#if jahr % 400 == 0:
+			#print('Schaltjahr')
+		#else:
+			#print('Kein Schaltjahr')
+	#else:
+		#print('Schaltjahr')
+#else:
+	#print('Kein Schaltjahr')
 
 
 
