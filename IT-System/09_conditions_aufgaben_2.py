@@ -44,22 +44,22 @@
 #spannung: U = "R" * "I", stärke: I = "U" / "R", wiederstand: R = "U" / "I"
 
 
-u_r_i = input("gibt ein wert ein U, R oder I: ")
+# u_r_i = input("gibt ein wert ein U, R oder I: ").upper()
     
-if u_r_i == "U":
-	r = float(input("gibt ein wert für R ein: "))
-	i = float(input("gibt ein wert für I ein: "))
-	print("Die Spannung ist ", r*i, "Volt" )
-elif u_r_i == "I":
-	u = float(input("gibt ein wert für U ein: "))
-	r = float(input("gibt ein wert für R ein: "))
-	print("Die Stärke ist ", u/r, "Ogm")
-elif u_r_i == "R":
-    u = float(input("gibt ein wert für U ein: "))
-    i = float(input("gibt ein wert für I ein: "))
-    print("Der Wiederstang ist ", u/i, "Ampere")
-else:
-	print("falschen wert eingegeben, bitte U, R oder I eingeben ")
+# if u_r_i == "U":
+# 	r = float(input("gibt ein wert für R ein: "))
+# 	i = float(input("gibt ein wert für I ein: "))
+# 	print("Die Spannung ist ", r*i, "Volt" )
+# elif u_r_i == "I":
+# 	u = float(input("gibt ein wert für U ein: "))
+# 	r = float(input("gibt ein wert für R ein: "))
+# 	print("Die Stärke ist ", u/r, "Ohm")
+# elif u_r_i == "R":
+#     u = float(input("gibt ein wert für U ein: "))
+#     i = float(input("gibt ein wert für I ein: "))
+#     print("Der Wiederstang ist ", u/i, "Ampere")
+# else:
+# 	print("falsche eingabe, bitte U, R oder I eingeben ")
 
 
 
@@ -68,6 +68,13 @@ else:
 # 100 €, erhält der Kunde einen Rabatt von 10 %. Liegt der Bestellwert höher, aber insgesamt nicht über 500 €,
 # beträgt der Rabatt 15 %, in allen anderen Fällen beträgt der Rabatt 20 %. Nach Eingabe des Bestellwertes soll
 # der ermäßigte Bestellwert berechnet und ausgegeben werden.
+
+
+promotion_1  = 10
+promotion_2 = 15
+promotion_3 = 20
+  
+
 
 
 
