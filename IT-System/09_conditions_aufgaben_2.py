@@ -44,22 +44,22 @@
 #spannung: U = "R" * "I", stärke: I = "U" / "R", wiederstand: R = "U" / "I"
 
 
-# u_r_i = input("gibt ein price ein U, R oder I: ").upper()
+u_r_i = input("gibt ein price ein U, R oder I: ").upper()
     
-# if u_r_i == "U":
-# 	r = float(input("gibt ein price für R ein: "))
-# 	i = float(input("gibt ein price für I ein: "))
-# 	print("Die Spannung ist ", r*i, "Volt" )
-# elif u_r_i == "I":
-# 	u = float(input("gibt ein price für U ein: "))
-# 	r = float(input("gibt ein price für R ein: "))
-# 	print("Die Stärke ist ", u/r, "Ohm")
-# elif u_r_i == "R":
-#     u = float(input("gibt ein price für U ein: "))
-#     i = float(input("gibt ein price für I ein: "))
-#     print("Der Wiederstang ist ", u/i, "Ampere")
-# else:
-# 	print("falsche eingabe, bitte U, R oder I eingeben ")
+if u_r_i == "U":
+	r = float(input("gibt ein price für R ein: "))
+	i = float(input("gibt ein price für I ein: "))
+	print("Die Spannung ist ", r*i, "Volt" )
+elif u_r_i == "I":
+	u = float(input("gibt ein price für U ein: "))
+	r = float(input("gibt ein price für R ein: "))
+	print("Die Stärke ist ", u/r, "Ohm")
+elif u_r_i == "R":
+    u = float(input("gibt ein price für U ein: "))
+    i = float(input("gibt ein price für I ein: "))
+    print("Der Wiederstang ist ", u/i, "Ampere")
+else:
+	print("falsche eingabe")
 
 
 
@@ -75,7 +75,6 @@ value_2 = 500
 discount_1 = 0.10
 discount_2 = 0.15
 discount_3 = 0.20
-
 price = float(input( "Gibt ein Bestellprice  ein :" ))
 
 if price <= value_1:
