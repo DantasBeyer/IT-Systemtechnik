@@ -15,9 +15,9 @@
 # print(name2)
 # print(value2 * value3)
 
-a, b, c,= 5, 3, 7
+# a, b, c,= 5, 3, 7
 
-print(c)
-print(b)
-print(a)
+# print(c)
+# print(b)
+# print(a)
 
