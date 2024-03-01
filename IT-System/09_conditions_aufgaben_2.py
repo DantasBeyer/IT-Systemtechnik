@@ -44,22 +44,7 @@
 #spannung: U = "R" * "I", stärke: I = "U" / "R", wiederstand: R = "U" / "I"
 
 
-u_r_i = input("gibt ein price ein U, R oder I: ").upper()
-    
-if u_r_i == "U":
-	r = float(input("gibt ein price für R ein: "))
-	i = float(input("gibt ein price für I ein: "))
-	print("Die Spannung ist ", r*i, "Volt" )
-elif u_r_i == "I":
-	u = float(input("gibt ein price für U ein: "))
-	r = float(input("gibt ein price für R ein: "))
-	print("Die Stärke ist ", u/r, "Ohm")
-elif u_r_i == "R":
-    u = float(input("gibt ein price für U ein: "))
-    i = float(input("gibt ein price für I ein: "))
-    print("Der Wiederstang ist ", u/i, "Ampere")
-else:
-	print("falsche eingabe")
+# 
 
 
 
@@ -70,24 +55,24 @@ else:
 # der ermäßigte Bestellprice berechnet und ausgegeben werden.
 
 
-value_1 = 100
-value_2 = 500
-discount_1 = 0.10
-discount_2 = 0.15
-discount_3 = 0.20
-price = float(input( "Gibt ein Bestellprice  ein :" ))
+# value_1 = 100
+# value_2 = 500
+# discount_1 = 0.10
+# discount_2 = 0.15
+# discount_3 = 0.20
+# price = float(input( "Gibt ein Bestellwert  ein :" ))
 
-if price <= value_1:
-    promotion = discount_1
-elif price <= value_2:
-    promotion = discount_2
-else:
-    promotion = discount_3
-endprice = price * (1 - promotion)
+# if price <= value_1:
+#     promotion = discount_1
+# elif price <= value_2:
+#     promotion = discount_2
+# else:
+#     promotion = discount_3
+# endprice = price * (1 - promotion)
 
-print(f"Preis ohne rabatt : {price:.2f} €")
-print(f"Rabatt : {promotion*100} %")
-print(f"Endpreis mit rabatt : {endprice:.2f} €")
+# print(f"Preis ohne rabatt : {price:.2f} €")
+# print(f"Rabatt : {promotion*100} %")
+# print(f"Endpreis mit rabatt : {endprice:.2f} €")
 
 # Der BMI berechnet sich aus dem Körpergewicht [kg] dividiert durch das Quadrat der Körpergröße [m2
 # Die Formel lautet: BMI = (Körpergewicht in kg): (Körpergröße in m)**2
@@ -101,6 +86,35 @@ print(f"Endpreis mit rabatt : {endprice:.2f} €")
 # massive Adipositas > 40 > 40
 # Das Programm soll vom Benutzer das Gewicht [in kg] die Größe [in cm] und das Geschlecht [m/w] abfragen. Am
 # Ende des Programms soll die BMI-Klassifikation der Person ausgegeben werden.
+
+gewicht = float(input("Gewicht in kg"))
+groesse = float(input("Groesse in cm"))
+geschlecht = input("Geschlecht m w")
+
+bmi = gewicht / (groesse / 100 ) ** 2
+
+if bmi > 40:
+    print("massive Adipostas")
+elif 30 < bmi <= 40:	
+    print("Adipositas")
+elif geschlecht == "w":
+    if bmi < 19:
+        print("Untergewicht")
+    elif 19 <= bmi < 24:
+        print("Normalgewicht")
+    elif 24 <= bmi < 30:
+        print("Uebergewicht")
+elif geschlecht == "m":
+    if bmi < 20:
+        print("Untergewicht")
+    elif 20 <= bmi < 25:
+        print("Normalgewicht")
+    elif 25 <= bmi < 30:
+        print("Uebergewicht")
+else:
+    print("falshe eingabe")
+
+
 
 
 # Schaltjahres-Berechnung
