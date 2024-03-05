@@ -1,10 +1,14 @@
 user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
-# printe für alle Namen der Liste user "createuser username"
+# print für alle Namen der Liste user "createuser username"
 # Beispiel "createuser Bob"
 
+#for name in user:
 
 # Wandele die Username in lowercase um bevor du sie ausdruckst
 # Beispiel "createuser bob"
+
+for name in user:
+    print('createuser',name.count)
 
 
 # Erweitere die Ausgabe um einen Zähler
