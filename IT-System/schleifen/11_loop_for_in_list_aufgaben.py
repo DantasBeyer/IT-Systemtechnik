@@ -8,7 +8,7 @@ user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
 # Beispiel "createuser bob"
 
 for name in user:
-    print('createuser',name.count)
+    print('createuser', name.lower())
 
 
 # Erweitere die Ausgabe um einen Zähler
