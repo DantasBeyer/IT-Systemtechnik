@@ -7,14 +7,16 @@ user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
 # Wandele die Username in lowercase um bevor du sie ausdruckst
 # Beispiel "createuser bob"
 
-for name in user:
-    print('createuser', name.lower())
+#for name in user:
+#    print('createuser', name.lower())
 
 
 # Erweitere die Ausgabe um einen Zähler
 # Beispiel "createuser Bob 1"
 # Beispiel "createuser Eve 2"
-
+for index, name in enumerate(user, start=1):
+    print('createuser', name.lower(), index)
+    
 
 # Es sollen nur noch User ausgegeben werden die ein "i"" in ihrem namen haben.
 
