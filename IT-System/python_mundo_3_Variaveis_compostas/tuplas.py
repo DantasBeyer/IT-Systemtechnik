@@ -5,11 +5,22 @@
 # as variaves sao compostas de de elementos diferentes(valores), que sao atribuidos automaticamente a indices(numeros)
 
 lanche = ("hamburger", "suco","pizza", "pudim")
-#range()
-for cont in range(len(lanche)):
-    print(f"eu vou comer {lanche[cont]}")
 
 #direto na variavel composta
-# for comida in lanche:
-#     print(f"eu vou comer {comida}")
+print("_____utilizando direto na variavel composta")
+for comida in lanche:
+     print(f"eu vou comer {comida}")
+
+# #range()
+print("_____utilizando o range()")
+for cont in range(len(lanche)):
+     print(f"eu vou comer {lanche[cont]}{cont}")
+
+#enumerate()
+print("_____utilizando o enumerate()")
+for posicao, comida in enumerate(lanche):
+    print(f"eu vou comer {comida} na posicao {posicao}")
+
 print("comi pra caramba")
+
+
