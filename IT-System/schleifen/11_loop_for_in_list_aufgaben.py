@@ -7,19 +7,43 @@ user = ['Bob', 'Eve', 'Jim', 'John', 'Tim']
 # Wandele die Username in lowercase um bevor du sie ausdruckst
 # Beispiel "createuser bob"
 
-for name in user:
-    print('createuser', name.lower())
+#for name in user:
+#    print('createuser', name.lower())
 
 
 # Erweitere die Ausgabe um einen Zähler
 # Beispiel "createuser Bob 1"
 # Beispiel "createuser Eve 2"
-
+#for index, name in enumerate(user, start=1):
+ #   print('createuser', name.lower(), index)
+    
 
 # Es sollen nur noch User ausgegeben werden die ein "i"" in ihrem namen haben.
-
+# for index, name in enumerate(user, start=1):
+# 	if 'i' in name.lower():
+#     		print('createuser', name.lower(), index)
+     
 # Tausche in jedem Namen den Buchstaben "B" gegen ein '8', 'E' gegen ein '3' 'o' gegen 0 und 'i' gegen '1' aus.
 
+
+updated_user = []
+
+for name in user: 
+	updated_name = ""
+	for char in name:
+		if char == "B":
+			updated_name = "8"
+		elif char == "E": 
+			updated_name = "3"
+		elif char == "o":
+			updated_name = "0"
+		elif char == "i":
+			updated_name = "1"
+		else:
+			updated_name = char
+updated_user.append(updated_name)
+
+updated_user
 
 # Es soll folgende Ausgabe mit einer Schleife erzeugt werden
 # Tip "\t"
